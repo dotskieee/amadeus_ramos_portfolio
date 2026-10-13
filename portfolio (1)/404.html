@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | Amadeus Asuncion Ramos</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#060B18">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232B63F2'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3EAR%3C/text%3E%3C/svg%3E">
+
+  <!-- All styles are inline on purpose: GitHub Pages serves this file at any broken address
+       (for example /missing/page), so relative paths such as assets/css/style.css would fail here. -->
+  <style>
+    :root { --bg:#060b18; --text:#eaf0ff; --muted:#9aa8c7; --accent:#2b63f2; --accent-bright:#6b95ff; --line:rgba(150,175,255,.2); }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100svh; display: grid; place-items: center; padding: 32px 24px;
+      color: var(--text); background:
+        radial-gradient(55% 50% at 80% 20%, rgba(43,99,242,.28), transparent 70%),
+        linear-gradient(var(--line) 1px, transparent 1px) 0 0 / 64px 64px,
+        linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0 / 64px 64px,
+        var(--bg);
+      font-family: "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif; line-height: 1.6;
+    }
+    main { width: min(100%, 560px); }
+    .code { margin: 0; font-size: clamp(5rem, 22vw, 9rem); font-weight: 800; letter-spacing: -.05em; line-height: 1; color: var(--accent-bright); }
+    h1 { margin: 12px 0 0; font-size: clamp(1.75rem, 5vw, 2.5rem); letter-spacing: -.02em; line-height: 1.15; }
+    p { color: var(--muted); font-size: 1.0625rem; margin: 16px 0 0; }
+    .actions { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; }
+    a.btn { display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 10px; font-weight: 600; text-decoration: none; color: #fff; background: var(--accent); }
+    a.btn:hover { background: #3d71f7; }
+    a.btn.secondary { background: transparent; border: 1px solid var(--line); color: var(--text); }
+    a.btn.secondary:hover { border-color: var(--accent-bright); }
+    a:focus-visible { outline: 2px solid var(--accent-bright); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="code" aria-hidden="true">404</p>
+    <h1>This page doesn't exist</h1>
+    <p>The address may be mistyped, or the page may have moved. Head back to the portfolio to find what you were looking for.</p>
+    <div class="actions">
+      <a class="btn" id="home-link" href="/">Back to home</a>
+      <a class="btn secondary" id="projects-link" href="/#projects">View projects</a>
+    </div>
+  </main>
+
+  <script>
+    /* CUSTOMIZE (only if needed):
+       - If your repository is named YOUR-USERNAME.github.io, or you use a custom domain, leave SITE_BASE as "/".
+       - If your repository has any other name (a "project site"), set SITE_BASE to "/your-repo-name/".  */
+    var SITE_BASE = "/";
+    document.getElementById("home-link").href = SITE_BASE;
+    document.getElementById("projects-link").href = SITE_BASE + "#projects";
+  </script>
+</body>
+</html>
